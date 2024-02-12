@@ -85,7 +85,6 @@
               event.stopPropagation();
             });
 
-            // Close the menu when clicking outside of it
             document.addEventListener('click', function (event) {
               if (!userMenu.contains(event.target) && event.target !== userMenuButton) {
                 userMenu.classList.add('hidden');
@@ -93,7 +92,6 @@
             });
           });
         </script>
-
 
       </div>
     </main>
